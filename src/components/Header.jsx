@@ -7,7 +7,7 @@ const Header = () => {
       <Nav>
         <Logo src="/assets/images/logo.svg" alt="Disney+" />
         <NavMenu>
-          <a href="/home">
+          <a href="/">
             <img src="/assets/images/home-icon.svg" alt="HOME" />
             <span>HOME</span>
           </a>
