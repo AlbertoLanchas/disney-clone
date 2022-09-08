@@ -3,20 +3,22 @@ import styled from "styled-components";
 import ImgSlider from "./ImgSlider";
 import Viewers from "./Viewers";
 import Movies from "./Movies";
-import db from "../firebase";
+import db from "../firebaseOld";
+import NewDisney from "./NewDiseney";
+import Originals from "./Originals";
+import Trending from "./Trending";
 
 const Home = () => {
-  useEffect(() => {
-    db.collection("movies").onSnapshot((snapshot) => {
-      console.log(snapshot);
-    });
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <Container>
       <ImgSlider />
       <Viewers />
       <Movies />
+      <NewDisney />
+      <Originals />
+      <Trending />
     </Container>
   );
 };
